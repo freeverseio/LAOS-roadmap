@@ -31,3 +31,4 @@ This milestone aims to integrate the LAOS parachain with the ROCOCO relay chain.
 - The LAOS team follows Scrum methodology, conducting sprint cycles lasting two weeks. Regular updates on sprint progress are shared with the Substrate Builders Program team during sprint review meetings.
 - The Substrate Builders Program team is invited to participate in these meetings to offer feedback and guidance on project development.
 - A new release of the LAOS Parachain will be proposed at the end of each sprint, subject to stakeholder approval. 
+- All software developed as part of the LAOS Parachain project will be released as open-source under an appropriate license.
