@@ -13,7 +13,7 @@ This milestone focuses on developing the LAOS ownership chain as a standalone ch
 
 
 ### Milestone 2 [3-6 months]
-The goal of this milestone is to create the solochain for the evolution chain. The first LAOS EVOChain will be created and a light node of it will be integrated into the LAOS ownership chain via the Parity Trustless Bridge. The LAOS EVOChain will enable asset evolution for assets whose ownership stays on the LAOS ownership chain.
+The goal of this milestone is to develop the LAOS evolution chains node. The first LAOS EVOChain will be created and a light node of it will be integrated into the LAOS ownership chain via the Parity Trustless Bridge. The LAOS EVOChain will enable asset evolution for assets whose ownership stays on the LAOS ownership chain.
 
 * **Deliverable 4**:
 * **Deliverable 5**:
