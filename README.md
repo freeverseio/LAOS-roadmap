@@ -5,24 +5,26 @@
 The LAOS Parachain aims to provide a secure and decentralized platform for the creation, ownership, and evolution of unique digital assets. The platform will utilize the Substrate framework and enable users to easily mint, trade, and evolve their assets. In addition, the LAOS Parachain will implement a robust governance system that will enable token holders to propose and vote on changes to the protocol.
 
 ### Milestone 1 [0-3 months]
+This milestone focuses on developing the LAOS ownership chain as a standalone chain, utilizing the AURA protocol for block production. The business logic for creating collections and changing asset ownership will be developed, while establishing infrastructure for continuous integration/continuous deployment (CI/CD) and testing network.
 
-- **Deliverable 1**: Connect LAOS parachain to Rococo network with AURA authoring algorithm.
-- **Deliverable 2**: Develop collection creation and ownership functionality, including the creation of a smart contract for collection creation and ownership, and integration of this functionality into the LAOS node.
-- **Deliverable 3**: Implement asset ownership and URI for metadata, including the development of a smart contract for asset ownership and URI for metadata, and integration of this functionality into the LAOS node.
-- **Additional Deliverable**: Mint LAOS token, including the development of a smart contract for the LAOS token, implementation of minting functionality in the LAOS node, and testing of proper integration with collection and asset functionality.
+* **Deliverable 1**:
+* **Deliverable 2**:
+* **Deliverable 3**:
+
 
 ### Milestone 2 [3-6 months]
+The goal of this milestone is to create the solochain for the evolution chain. The first LAOS EVOChain will be created and a light node of it will be integrated into the LAOS ownership chain via the Parity Trustless Bridge. The LAOS EVOChain will enable asset evolution for assets whose ownership stays on the LAOS ownership chain.
 
-- **Deliverable 1**: Develop XC-20 integration and test communication with EVM sibling parachain, including the implementation of XC-20 token standard and integration with an EVM sibling parachain. Testing of communication and interoperability with the EVM sibling parachain should also be performed.
-- **Deliverable 2**: Develop LAOS Evolution Chains to enable asset metadata evolution by collection owners, including the design and implementation of LAOS Evolution Chains, and integration of asset metadata evolution functionality into the LAOS node.
-- **Deliverable 3**: Ensure that asset URIs are universal locations pointing to the LAOS Evolution Chains, including the development of a universal asset URI scheme, and implementation of universal asset URIs in the LAOS node.
+* **Deliverable 4**:
+* **Deliverable 5**:
+* **Deliverable 6**:
 
 ### Milestone 3 [6-9 months]
+This milestone aims to integrate the LAOS parachain with the ROCOCO relay chain. The XC-20 protocol will be integrated to facilitate transfer of the LAOS token to sibling parachains.
 
-- **Deliverable 1**: Implement governance functionality for LAOS Parachain, including the design and implementation of a governance system for LAOS Parachain, and enabling token holders to propose and vote on changes to the protocol.
-- **Deliverable 2**: Enable Proof of Existence (PoE) of asset metadata on LAOS Parachain, including the development of PoE functionality for asset metadata, proper integration with asset creation and ownership functionality, and integration of PoE functionality into the LAOS node.
-- **Deliverable 3**: Testing and optimization, including extensive testing of governance and PoE functionality, optimization of performance, and scalability.
-- Additional Deliverable: Develop user interface for governance and PoE functionality, including end-to-end testing and debugging.
+* **Deliverable 7**:
+* **Deliverable 8**:
+* **Deliverable 9**:
 
 ### Notes
 
