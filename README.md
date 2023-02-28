@@ -26,7 +26,7 @@ In order to accomplish this, we will concentrate on implementing the necessary b
 * **Deliverable 6**:
 
 ### Milestone 3 [6-9 months]
-This milestone aims to integrate the LAOS parachain with the ROCOCO relay chain. The XC-20 protocol will be integrated to facilitate transfer of the LAOS token to sibling parachains.
+This milestone aims to integrate the LAOS parachain with the ROCOCO relay chain. The XC-20 protocol will be integrated to facilitate transfer of the LAOS token to sibling parachains. Publication of the whitepaper.
 
 * **Deliverable 7**:
 * **Deliverable 8**:
