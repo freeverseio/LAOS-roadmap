@@ -3,17 +3,23 @@
 ### Goals and Objectives
 
 The LAOS Parachain aims to provide a secure and decentralized platform for the creation, ownership, and evolution of unique digital assets. The platform will utilize the Substrate framework and enable users to easily mint, trade, and evolve their assets. In addition, the LAOS Parachain will implement a robust governance system that will enable token holders to propose and vote on changes to the protocol.
-
 ### Milestone 1 [0-3 months]
-This milestone focuses on developing the LAOS ownership chain as a standalone chain, utilizing the AURA protocol for block production. The business logic for creating collections and changing asset ownership will be developed, while establishing infrastructure for continuous integration/continuous deployment (CI/CD) and testing network.
 
-* **Deliverable 1**:
-* **Deliverable 2**:
-* **Deliverable 3**:
+The focus of this milestone is to develop the LAOS ownership chain as a parachain, using the AURA protocol for block production. We will implement the business logic for creating collections and changing asset ownership, while establishing the necessary infrastructure for continuous integration/continuous deployment (CI/CD) and testing network. Additionally, we will expose an ethereum compatible JSON-RPC API to allow for the transaction of LAOS tokens and enable users to interact with the assets using the ERC721 standard.
 
+To ensure the reliability and functionality of the LAOS parachain, we will connect a testing network to the Rococo relay chain for further testing and development. 
+
+
+* **Deliverable 1**: 
+* **Deliverable 2**: 
+* **Deliverable 3**: 
 
 ### Milestone 2 [3-6 months]
-The goal of this milestone is to develop the LAOS evolution chains node. The first LAOS EVOChain will be created and a light node of it will be integrated into the LAOS ownership chain via the Parity Trustless Bridge. The LAOS EVOChain will enable asset evolution for assets whose ownership stays on the LAOS ownership chain.
+During this milestone, our primary focus will be on developing the LAOS Evolution Chain (EVOChain) node and integrating it with the existing Ownership Chain. Our objective is to establish a trustless bridge between the two chains using GRANDPA finality and create the first LAOS EVOChain. This will enable asset evolution for assets that remain on the LAOS Ownership Chain.
+
+In order to accomplish this, we will concentrate on implementing the necessary business logic to support asset evolution. Our goal is to have two fully functional and secure LAOS EVOChains integrated with the LAOS parachain in ROCOCO by the end of this milestone, allowing for seamless asset evolution.
+
+
 
 * **Deliverable 4**:
 * **Deliverable 5**:
