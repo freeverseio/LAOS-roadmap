@@ -1,5 +1,5 @@
 # ERC-721 compatibility
-We will analyze the implementation of a complete [ERC-721 standard**](https://eips.ethereum.org/EIPS/eip-721), including its extensions, by introducing the ERC-721 node. This node will be connected to a LAOS ownership node and a LAOS evolution node to retrieve the necessary data.
+We will analyze the implementation of a complete [ERC-721 standard](https://eips.ethereum.org/EIPS/eip-721), including its extensions, by introducing the ERC-721 node. This node will be connected to a LAOS ownership node and a LAOS evolution node to retrieve the necessary data.
 
 The infrastructure of the nodes is depicted in the following diagram:
 
