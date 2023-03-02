@@ -5,9 +5,7 @@
 The LAOS Parachain aims to provide a secure and decentralized platform for the creation, ownership, and evolution of unique digital assets. The platform will utilize the Substrate framework and enable users to easily mint, trade, and evolve their assets. In addition, the LAOS Parachain will implement a robust governance system that will enable token holders to propose and vote on changes to the protocol.
 ### Milestone 1 [0-3 months]
 
-The focus of this milestone is to develop the LAOS ownership chain as a parachain, using the AURA protocol for block production. We will implement the business logic for creating collections and changing asset ownership, while establishing the necessary infrastructure for continuous integration/continuous deployment (CI/CD) and testing network. Additionally, we will expose an ethereum compatible JSON-RPC API to allow for the transaction of LAOS tokens and enable users to interact with the assets using the ERC721 standard.
-
-To ensure the reliability and functionality of the LAOS parachain, we will connect a testing network to the Rococo relay chain for further testing and development. 
+The focus of this milestone is to develop the LAOS ownership chain as a parachain, using the AURA protocol for block production. We will implement the business logic for creating collections and changing asset ownership, while establishing the necessary infrastructure for continuous integration/continuous deployment (CI/CD) and testing network. To ensure the reliability and functionality of the LAOS parachain, we will connect a testing network to the Rococo relay chain for further testing and development.
 
 
 * **Deliverable 1**: 
