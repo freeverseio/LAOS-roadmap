@@ -13,11 +13,13 @@ The focus of this milestone is to develop the LAOS ownership chain as a parachai
 * **Deliverable 3**: 
 
 ### Milestone 2 [3-6 months]
-During this milestone, our primary focus will be on developing the LAOS Evolution Chain (EVOChain) node and integrating it with the existing Ownership Chain. Our objective is to establish a trustless bridge between the two chains using GRANDPA finality and create the first LAOS EVOChain. This will enable asset evolution for assets that remain on the LAOS Ownership Chain.
+The main objective of this milestone is to develop the LAOS Evolution Chain (EVOChain) node and integrate it with the existing Ownership Chain using a trustless bridge, thus creating the first LAOS evolution chain.
 
-In order to accomplish this, we will concentrate on implementing the necessary business logic to support asset evolution. Our goal is to have two fully functional and secure LAOS EVOChains integrated with the LAOS parachain in ROCOCO by the end of this milestone, allowing for seamless asset evolution.
+To achieve this goal, we will focus on implementing the necessary business logic to support asset evolution. By the end of this milestone, our aim is to have a fully functional and secure LAOS evolution chain integrated with the LAOS parachain in ROCOCO, which will allow for seamless asset evolution.
 
+During this milestone, our primary focus will be on developing the LAOS Evolution Chain and its integration with LAOS Ownership Chain. Our objective is to establish a trustless bridge between the two chains. This will enable metadata evolution for assets that reside in LAOS Ownership Chain. The Evolution chain will be capable to generate Proof of Existence of the metadata of the assets meanwhile the the ownership chain will be capable to verify it.                       
 
+In order to accomplish this, we will concentrate on implementing the necessary business logic to support asset evolution. Our goal is to have one fully functional and secured LAOS evolution chains integrated with the LAOS parachain in ROCOCO by the end of this milestone, allowing for seamless asset evolution.
 
 * **Deliverable 4**:
 * **Deliverable 5**:
@@ -25,6 +27,8 @@ In order to accomplish this, we will concentrate on implementing the necessary b
 
 ### Milestone 3 [6-9 months]
 This milestone aims to integrate the LAOS parachain with the ROCOCO relay chain. The XC-20 protocol will be integrated to facilitate transfer of the LAOS token to sibling parachains. Publication of the whitepaper.
+
+![](./erc721Capabilities/nodes-infrastructure.drawio.svg)
 
 * **Deliverable 7**:
 * **Deliverable 8**:
