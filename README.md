@@ -25,6 +25,8 @@ To achieve this goal, we will release the LAOS ownership parachain node and the 
 #### **Deliverable 2**: 
 The second deliverable of the project focuses on making the LAOS network a parachain of Rococo. We will release the LAOS evolution chain node. To ensure a reliable testing infrastructure, we will build on the experience gained from the previous deliverable.
 
+![](./relay_ownership_evolution_bridge.drawio.svg)
+
 - [ownChain] LAOS ownership chain connected to Rococo as a parachain
 - [evoCahin] release of the evolution chain node:
     - PoA
