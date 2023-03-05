@@ -40,8 +40,8 @@ channel from the evolution chain to the ownership chain.
 ![](./relay_ownership_evolution_bridge.drawio.svg)
 
 - [ownChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
-- [bridge] release
-- [evo->own bridge] up and running
+- [bridge] release of LAOS bridge
+- [bridge] evolution -> ownership bridge up and running
 
 #### **Deliverable 3**: 
 The third deliverable will focus on enabling bidirectional communication of the LAOS chain through trustless 
@@ -53,7 +53,7 @@ the governance of the evolution chain and instead allow it to be governed by the
 - [evoChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
 - [evoChain] governance removed
 - [ownChain] govern the evolution chains by XCM
-- [own->evo bridge] up and running
+- [bridge] ownership -> evolution bridge up and running
 
 
 ### **Milestone 2 [3-6 months]**
@@ -64,7 +64,7 @@ To achieve this goal, we will focus on implementing the necessary business logic
 #### **Deliverable 4**:
 The forth deliverable focuses on the business logic for creating collections and their evolution. We will build on the already existent [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts)  provided by substrate to create a specific implementation. Additionally, we will integrate asset metadata evolution in the evolution chain.
 
-To achieve this, we will develop a living asset ownership pallet based on the nfts pallet and integrate it into the ownership chain. Additionally, we will develop a living asset evolution pallet and integrate it into the evolution chain. This will allow us to create and evolve collections.
+To achieve this, we will develop a **living asset ownership pallet** based on the nfts pallet and integrate it into the ownership chain. Additionally, we will develop a **living asset evolution pallet** and integrate it into the evolution chain. This will allow us to create and evolve collections.
 
 - development of livingasset ownership pallet based on [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) 
 - [ownChain] integration living asset ownership pallet  
