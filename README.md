@@ -62,12 +62,14 @@ To achieve this, we will develop a living asset ownership pallet based on the nf
 - development of livingasset evolution pallet
 - [evoChain] integration of living asset evolution pallet
 #### **Deliverable 5**:
+![](./erc721Capabilities/nodes-infrastructure.drawio.svg)
 #### **Deliverable 6**:
+This deliverable will be focused on the generation of proof of existence of the metadata of the assets. Evolution chain will be able to generate the proof and the ownership chain will be in charge of verify it.
+
 
 ### **Milestone 3 [6-9 months]**
 This milestone aims to integrate the LAOS parachain with the ROCOCO relay chain. The XC-20 protocol will be integrated to facilitate transfer of the LAOS token to sibling parachains. Publication of the whitepaper.
 
-![](./erc721Capabilities/nodes-infrastructure.drawio.svg)
 
 #### **Deliverable 7**:
 #### **Deliverable 8**:
