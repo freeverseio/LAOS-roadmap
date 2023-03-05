@@ -62,16 +62,21 @@ The main objective of this milestone is to develop the LAOS Evolution Chain (EVO
 To achieve this goal, we will focus on implementing the necessary business logic to support asset evolution. By the end of this milestone, our aim is to have a fully functional and secure LAOS evolution chain integrated with the LAOS parachain in ROCOCO, which will allow for seamless asset evolution.
 
 #### **Deliverable 4**:
-The forth deliverable focuses on the business logic for creating collections and their evolution. We will build on the already existent [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts)  provided by substrate to create a specific implementation. Additionally, we will integrate asset metadata evolution in the evolution chain.
+The forth deliverable focuses on the business logic for creating collections and their evolution.
 
-To achieve this, we will develop a **living asset ownership pallet** based on the nfts pallet and integrate it into the ownership chain. Additionally, we will develop a **living asset evolution pallet** and integrate it into the evolution chain. This will allow us to create and evolve collections.
+To achieve this, we will develop a **living asset ownership pallet** based on the [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts)  and integrate it into the ownership chain. Additionally, we will develop a **living asset evolution pallet** and integrate it into the evolution chain. This will allow us to create and evolve collections.
 
 - development of livingasset ownership pallet based on [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) 
 - [ownChain] integration living asset ownership pallet  
 - development of livingasset evolution pallet
 - [evoChain] integration of living asset evolution pallet
 #### **Deliverable 5**:
+On the fifth deliverable we will develop the services needed for [ERC721 standard compatibility](./erc721Capabilities/README.md). To achieve this, we'll introduce the LAOS ERC721 node which will expose an Ethereum JSON-RPC api. 
+This will enable Ethereum wallets such as Metamask to interact with the livingassets.
+
 ![](./erc721Capabilities/nodes-infrastructure.drawio.svg)
+
+- release ERC721 node 
 #### **Deliverable 6**:
 This deliverable will be focused on the generation of proof of existence of the metadata of the assets. Evolution chain will be able to generate the proof and the ownership chain will be in charge of verify it.
 
