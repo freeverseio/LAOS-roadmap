@@ -28,6 +28,7 @@ The second deliverable is focused entirely on creating a trustless bridge betwee
 ![](./relay_ownership_evolution_bridge.drawio.svg)
 
 - [ownChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
+- [bridge] release
 - [bridge] up and running
 
 #### **Deliverable 3**: 
