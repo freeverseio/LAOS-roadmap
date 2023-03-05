@@ -16,31 +16,29 @@ The goal is to establish the fundamental infrastructure upon which we will build
 To achieve this goal, we will release the LAOS ownership parachain node and the LAOS evolution chain node. Once we have completed the first deliverable, the LAOS ownership chain will be operational and connected to Rococo as a parachain, and the first evolution will be up and running as a solochain.
 
 ![](./relay_ownership_evolution.drawio.svg)
-- [ownChain] release of LAOS ownership parachain node
+- [ownChain] release of LAOS ownership parachain node based on substrate based on [substrate parachain template](https://github.com/substrate-developer-hub/substrate-parachain-template)
 - [ownChain] LAOS ownership chain is alive
-- [ownChain] LAOS ownership chain connected to Rococo as a parachain
-- [evoChain] release of LAOS evolution chain node
+- [ownChain] LAOS ownership chain connected to [Rococo](https://substrate.io/developers/rococo-network) as a parachain
+- [evoChain] release of LAOS evolution chain node based on [substrate node template](https://github.com/substrate-developer-hub/substrate-node-template)
 - [evoChain] LAOS evolution chain is alive 
 
 #### **Deliverable 2**: 
-The second deliverable of the project focuses on making the LAOS network a parachain of Rococo. We will release the LAOS evolution chain node. To ensure a reliable testing infrastructure, we will build on the experience gained from the previous deliverable.
+The second deliverable is focused entirely on creating a trustless bridge between the LAOS evolution chain and the ownership chain. To achieve this, we will install an evolution chain light client in the ownership chain and initiate a bridge service between the two chains. Additionally, we will open the Grandpa-XCM channel from the evolution chain to the ownership chain.
 
 ![](./relay_ownership_evolution_bridge.drawio.svg)
 
-- [ownChain] LAOS ownership chain connected to Rococo as a parachain
-- [evoCahin] release of the evolution chain node:
-    - PoA
-    - ECDSA key account
-    - CI / CD
-- [evoChain] LAOS evolution chain is alive
-
+- [ownChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
+- [bridge] up and running
 
 #### **Deliverable 3**: 
-In the third deliverable we will focus on the business logic for creating the collection and their evolution. We will leverage the already existent assets pallet provided by substrate as a base for our specific implementation.  
-- [ownChain] creation of collections  
-- [ownChain] transfer of assets 
-- [evoChain] creation of collections
-- [evoChain] collection's owner can change assets metadata
+The third deliverable focuses on the business logic for creating collections and their evolution. We will build on the already existent [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts)  provided by substrate to create a specific implementation. Additionally, we will integrate asset metadata evolution in the evolution chain.
+
+To achieve this, we will develop a living asset ownership pallet based on the nfts pallet and integrate it into the ownership chain. Additionally, we will develop a living asset evolution pallet and integrate it into the evolution chain. This will allow us to create and evolve collections.
+
+- development of livingasset ownership pallet based on [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) 
+- [ownChain] integration living asset ownership pallet  
+- development of livingasset evolution pallet
+- [evoChain] integration of living asset evolution pallet
 
 ### **Milestone 2 [3-6 months]**
 The main objective of this milestone is to develop the LAOS Evolution Chain (EVOChain) node and integrate it with the existing Ownership Chain using a trustless bridge, thus creating the first LAOS evolution chain.
