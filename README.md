@@ -29,17 +29,18 @@ The second deliverable is focused entirely on creating a trustless bridge betwee
 
 - [ownChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
 - [bridge] release
-- [bridge] up and running
+- [evo->own bridge] up and running
 
 #### **Deliverable 3**: 
-The third deliverable focuses on the business logic for creating collections and their evolution. We will build on the already existent [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts)  provided by substrate to create a specific implementation. Additionally, we will integrate asset metadata evolution in the evolution chain.
+The third deliverable will focus on enabling bidirectional communication of the LAOS chain through trustless bridges, allowing governance of the evolution chain from the ownership chain. To achieve this, we will remove the governance of the evolution chain and instead allow it to be governed by the ownership chain. Additionally, we will approve evochain runtime upgrades through the governance of the ownership chain.
 
-To achieve this, we will develop a living asset ownership pallet based on the nfts pallet and integrate it into the ownership chain. Additionally, we will develop a living asset evolution pallet and integrate it into the evolution chain. This will allow us to create and evolve collections.
+![](./relay_ownership_evolution_duplexbridge.drawio.svg)
 
-- development of livingasset ownership pallet based on [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) 
-- [ownChain] integration living asset ownership pallet  
-- development of livingasset evolution pallet
-- [evoChain] integration of living asset evolution pallet
+- [evoChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
+- [evoChain] governance removed
+- [ownChain] govern the evolution chains by XCM
+- [own->evo bridge] up and running
+
 
 ### **Milestone 2 [3-6 months]**
 The main objective of this milestone is to develop the LAOS Evolution Chain (EVOChain) node and integrate it with the existing Ownership Chain using a trustless bridge, thus creating the first LAOS evolution chain.
@@ -47,6 +48,14 @@ The main objective of this milestone is to develop the LAOS Evolution Chain (EVO
 To achieve this goal, we will focus on implementing the necessary business logic to support asset evolution. By the end of this milestone, our aim is to have a fully functional and secure LAOS evolution chain integrated with the LAOS parachain in ROCOCO, which will allow for seamless asset evolution.
 
 #### **Deliverable 4**:
+The forth deliverable focuses on the business logic for creating collections and their evolution. We will build on the already existent [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts)  provided by substrate to create a specific implementation. Additionally, we will integrate asset metadata evolution in the evolution chain.
+
+To achieve this, we will develop a living asset ownership pallet based on the nfts pallet and integrate it into the ownership chain. Additionally, we will develop a living asset evolution pallet and integrate it into the evolution chain. This will allow us to create and evolve collections.
+
+- development of livingasset ownership pallet based on [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) 
+- [ownChain] integration living asset ownership pallet  
+- development of livingasset evolution pallet
+- [evoChain] integration of living asset evolution pallet
 #### **Deliverable 5**:
 #### **Deliverable 6**:
 
