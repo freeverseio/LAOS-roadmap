@@ -5,13 +5,13 @@
 The LAOS Parachain aims to provide a secure and decentralized platform for the creation, ownership, and evolution of unique digital assets. The platform will utilize the Substrate framework and enable users to easily mint, trade, and evolve their assets. In addition, the LAOS Parachain will implement a robust governance system that will enable token holders to propose and vote on changes to the protocol.
 ### **Milestone 1 [0-3 months]**
 
-Milestone 1 focuses on establishing the fundamental infrastructure for the LAOS project, creating a solid foundation for future development.
+Milestone 1 of the project will establish the basic infrastructure required for the development of the LAOS blockchain network. The primary objective of the milestone is to create and automate a test infrastructure for local testing, continuous integration, and continuous delivery.
 
-The first deliverable involves creating and automating a test infrastructure, including releasing the LAOS ownership parachain node and the LAOS evolution chain node. Once completed, the LAOS ownership chain will be operational and connected to Rococo as a parachain, and the first evolution will be up and running as a solochain.
+The milestone will involve the release of the LAOS ownership parachain node and the LAOS evolution chain node, which will create the fundamental infrastructure on which the subsequent deliverables will be built. Once the milestone is complete, the LAOS ownership chain will be operational and connected to Rococo as a parachain, and the first evolution will be up and running as a solochain.
 
-The second deliverable is focused on creating a trustless bridge between the LAOS evolution chain and the ownership chain. This involves integrating the solochain-parachain bridge, initiating a bridge service, and opening the Grandpa-XCM channel from the evolution chain to the ownership chain.
+In addition to establishing the infrastructure, the milestone will focus on creating a trustless bridge between the LAOS evolution chain and the ownership chain. This will be achieved by installing an evolution chain light client in the ownership chain and initiating a bridge service between the two chains. The Grandpa-XCM channel will be opened from the evolution chain to the ownership chain, enabling bidirectional communication.
 
-The third deliverable will enable bidirectional communication between the LAOS chain through trustless bridges, allowing the evolution chain to be governed by the ownership chain. This will involve removing the governance of the evolution chain.
+Finally, the milestone will enable governance of the evolution chain from the ownership chain by removing the governance of the evolution chain and allowing it to be governed by the ownership chain. 
 
 #### **Deliverable 1**: 
 The primary objective of the first deliverable is to bootstrap the project by creating and automating a test infrastructure focused on local testing, continuous integration, and continuous delivery.
