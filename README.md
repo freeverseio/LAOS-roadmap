@@ -5,20 +5,24 @@
 The LAOS Parachain aims to provide a secure and decentralized platform for the creation, ownership, and evolution of unique digital assets. The platform will utilize the Substrate framework and enable users to easily mint, trade, and evolve their assets. In addition, the LAOS Parachain will implement a robust governance system that will enable token holders to propose and vote on changes to the protocol.
 ### **Milestone 1 [0-3 months]**
 
-The first milestone of the project aims to establish the basic infrastructure required for the development of the LAOS blockchain network within the next three months. The primary goal is to create and automate a test infrastructure that will focus on local testing, continuous integration, and continuous delivery.
+The first milestone of the project aims to establish the basic infrastructure required for the development of 
+the LAOS blockchain network within the next three months. The primary goals are to create the LAOS ownership 
+chain as a parachain of Rococo and create the first LAOS evolution chain. A bidirection trustless bridge will 
+be installed to enable cross chain communication allowing the ownership chain govern the evolution chain.
 
-This milestone will involve the release of the LAOS ownership parachain node and the LAOS evolution chain node, which will establish the fundamental infrastructure necessary for subsequent deliverables. Upon completion of the milestone, the LAOS ownership chain will be operational and connected to Rococo as a parachain, while the first evolution will be up and running as a solochain.
 
-Additionally, the milestone will focus on creating a trustless bridge between the LAOS evolution chain and the ownership chain. This will be achieved by installing an evolution chain light client in the ownership chain and initiating a bridge service between the two chains. Bidirectional communication will be enabled through the opening of the Grandpa-XCM channel from the evolution chain to the ownership chain.
-
-Finally, the milestone will remove the governance of the evolution chain and allow it to be governed by the ownership chain, enabling governance of the evolution chain from the ownership chain.
+We will release:
+- LAOS ownership chain node
+- LAOS evolution chain node
+- LAOS bidirectional bridge
 
 #### **Deliverable 1**: 
-The primary objective of the first deliverable is to bootstrap the project by creating and automating a test infrastructure focused on local testing, continuous integration, and continuous delivery.
-
-The goal is to establish the fundamental infrastructure upon which we will build the project's subsequent deliverables.
-
-To achieve this goal, we will release the LAOS ownership parachain node and the LAOS evolution chain node. Once we have completed the first deliverable, the LAOS ownership chain will be operational and connected to Rococo as a parachain, and the first evolution will be up and running as a solochain.
+The primary objective of the first deliverable is to bootstrap the project by creating and automating a test 
+infrastructure focused on local testing, continuous integration, and continuous delivery. The goal is to 
+establish the fundamental infrastructure upon which we will build the project's subsequent deliverables. 
+To achieve this goal, we will release the LAOS ownership parachain node and the LAOS evolution chain node. 
+Once we have completed the first deliverable, the LAOS ownership chain will be operational and connected to 
+Rococo as a parachain, and the first evolution will be up and running as a solochain.
 
 ![](./relay_ownership_evolution.drawio.svg)
 - [ownChain] release of LAOS ownership parachain node based on substrate based on [substrate parachain template](https://github.com/substrate-developer-hub/substrate-parachain-template)
@@ -28,7 +32,10 @@ To achieve this goal, we will release the LAOS ownership parachain node and the 
 - [evoChain] LAOS evolution chain is alive 
 
 #### **Deliverable 2**: 
-The second deliverable is focused entirely on creating a trustless bridge between the LAOS evolution chain and the ownership chain. To achieve this, we will install an evolution chain light client in the ownership chain and initiate a bridge service between the two chains. Additionally, we will open the Grandpa-XCM channel from the evolution chain to the ownership chain.
+The second deliverable is focused entirely on creating a trustless bridge between the LAOS evolution chain 
+and the ownership chain. To achieve this, we will install an evolution chain light client in the ownership 
+chain and initiate a bridge service between the two chains. Additionally, we will open the Grandpa-XCM 
+channel from the evolution chain to the ownership chain.
 
 ![](./relay_ownership_evolution_bridge.drawio.svg)
 
@@ -37,7 +44,9 @@ The second deliverable is focused entirely on creating a trustless bridge betwee
 - [evo->own bridge] up and running
 
 #### **Deliverable 3**: 
-The third deliverable will focus on enabling bidirectional communication of the LAOS chain through trustless bridges, allowing governance of the evolution chain from the ownership chain. To achieve this, we will remove the governance of the evolution chain and instead allow it to be governed by the ownership chain. Additionally, we will approve evochain runtime upgrades through the governance of the ownership chain.
+The third deliverable will focus on enabling bidirectional communication of the LAOS chain through trustless 
+bridges, allowing governance of the evolution chain from the ownership chain. To achieve this, we will remove 
+the governance of the evolution chain and instead allow it to be governed by the ownership chain. 
 
 ![](./relay_ownership_evolution_duplexbridge.drawio.svg)
 
