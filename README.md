@@ -27,7 +27,7 @@ Once we have completed the first deliverable, the LAOS ownership chain will be o
 Rococo as a parachain, and the first evolution will be up and running as a solochain.
 
 ![](./relay_ownership_evolution.drawio.svg)
-- [ownChain] release of LAOS ownership parachain node based on substrate based on [substrate parachain template](https://github.com/substrate-developer-hub/substrate-parachain-template)
+- [ownChain] release of LAOS ownership parachain node based on [substrate parachain template](https://github.com/substrate-developer-hub/substrate-parachain-template)
 - [ownChain] LAOS ownership chain is alive
 - [ownChain] LAOS ownership chain connected to [Rococo](https://substrate.io/developers/rococo-network) as a parachain
 - [evoChain] release of LAOS evolution chain node based on [substrate node template](https://github.com/substrate-developer-hub/substrate-node-template)
