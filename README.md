@@ -84,12 +84,26 @@ This deliverable will be focused on the generation of proof of existence of the 
 
 ---
 ### **Milestone 3 [6-9 months]**
-This milestone aims to integrate the LAOS parachain with the ROCOCO relay chain. The XC-20 protocol will be integrated to facilitate transfer of the LAOS token to sibling parachains. Publication of the whitepaper.
-
+During the final stage of development, we will prioritize cross-chain communication with sibling parachains, conduct a thorough code audit, and make preparations for the stable release of the code. We will also create a dynamic asset marketplace to demonstrate the system's capabilities. Finally, we will enable staking and eliminate the sudo pallet.
 
 #### **Deliverable 7**:
+In order to open the economy of the LAOS token we will implement XC-20 protocol for reserve transfer. We also activate the XCMv3 primitives to control the livingassets from sybling parachain. Additionally we will create the second LAOS evolution chain and will integrate a way to move a collection from the first evolution chain to the new one.
+
+- [ownChain] XC-20 protocol
+- [ownChain] remote transfer of living assets
+
 #### **Deliverable 8**:
+- [frontend] creation of living asset marketplace based on [substrate frontend template](https://github.com/substrate-developer-hub/substrate-front-end-template)
+- [ownChain] staking enabled
+- audit of the code
 #### **Deliverable 9**:
+In the final deliverable we will release the first stable version of the software and we'll remove the sudo pallet from the ownership chain.
+
+- [ownChain] remove sudo pallet
+- stable release of LAOS ownership node
+- stable release of LAOS evolution node
+- stable release of ERC721 node
+- stable release of the bridge
 ---
 ### Notes
 
