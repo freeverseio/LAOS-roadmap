@@ -57,9 +57,7 @@ the governance of the evolution chain and instead allow it to be governed by the
 
 
 ### **Milestone 2 [3-6 months]**
-The main objective of this milestone is to develop the LAOS Evolution Chain (EVOChain) node and integrate it with the existing Ownership Chain using a trustless bridge, thus creating the first LAOS evolution chain.
-
-To achieve this goal, we will focus on implementing the necessary business logic to support asset evolution. By the end of this milestone, our aim is to have a fully functional and secure LAOS evolution chain integrated with the LAOS parachain in ROCOCO, which will allow for seamless asset evolution.
+During Milestone 2 we will concentrate on implementing all aspects of livingassets. Our primary goals will include enabling LAOS to create collections, transfer livingassets, evolve the assets' metadata, generate proof, and verify assets metadata by Merkle proof. Furthermore, we will develop a layer of compatibility with the ERC721 standard.
 
 #### **Deliverable 4**:
 The forth deliverable focuses on the business logic for creating collections and their evolution.
@@ -79,6 +77,8 @@ In order to achieve compatibility with the ERC721 standard, we will develop the 
 #### **Deliverable 6**:
 This deliverable will be focused on the generation of proof of existence of the metadata of the assets. Evolution chain will be able to generate the proof and the ownership chain will be in charge of verify it.
 
+- [evoChain] generate proof of existence of assets metadata
+- [ownChain] verify proof of existence of assets metadata
 
 ### **Milestone 3 [6-9 months]**
 This milestone aims to integrate the LAOS parachain with the ROCOCO relay chain. The XC-20 protocol will be integrated to facilitate transfer of the LAOS token to sibling parachains. Publication of the whitepaper.
