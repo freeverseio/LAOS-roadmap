@@ -71,8 +71,7 @@ To achieve this, we will develop a **living asset ownership pallet** based on th
 - development of livingasset evolution pallet
 - [evoChain] integration of living asset evolution pallet
 #### **Deliverable 5**:
-On the fifth deliverable we will develop the services needed for [ERC721 standard compatibility](./erc721Capabilities/README.md). To achieve this, we'll introduce the LAOS ERC721 node which will expose an Ethereum JSON-RPC api. 
-This will enable Ethereum wallets such as Metamask to interact with the livingassets.
+In order to achieve compatibility with the ERC721 standard, we will develop the necessary services on our fifth deliverable. This will involve introducing the [LAOS ERC721 node](./erc721Capabilities/README.md), which will provide an Ethereum JSON-RPC api. As a result, Ethereum wallets such as Metamask will be able to interact with the living assets.
 
 ![](./erc721Capabilities/nodes-infrastructure.drawio.svg)
 
