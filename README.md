@@ -3,6 +3,8 @@
 ### **Goals and Objectives**
 
 The LAOS Parachain aims to provide a secure and decentralized platform for the creation, ownership, and evolution of unique digital assets. The platform will utilize the Substrate framework and enable users to easily mint, trade, and evolve their assets. In addition, the LAOS Parachain will implement a robust governance system that will enable token holders to propose and vote on changes to the protocol.
+
+---
 ### **Milestone 1 [0-3 months]**
 
 The first milestone of the project aims to establish the basic infrastructure required for the development of 
@@ -55,7 +57,7 @@ the governance of the evolution chain and instead allow it to be governed by the
 - [ownChain] govern the evolution chains by XCM
 - [bridge] ownership -> evolution bridge up and running
 
-
+---
 ### **Milestone 2 [3-6 months]**
 During Milestone 2 we will concentrate on implementing all aspects of livingassets. Our primary goals will include enabling LAOS to create collections, transfer livingassets, evolve the assets' metadata, generate proof, and verify assets metadata by Merkle proof. Furthermore, we will develop a layer of compatibility with the ERC721 standard.
 
@@ -80,6 +82,7 @@ This deliverable will be focused on the generation of proof of existence of the 
 - [evoChain] generate proof of existence of assets metadata
 - [ownChain] verify proof of existence of assets metadata
 
+---
 ### **Milestone 3 [6-9 months]**
 This milestone aims to integrate the LAOS parachain with the ROCOCO relay chain. The XC-20 protocol will be integrated to facilitate transfer of the LAOS token to sibling parachains. Publication of the whitepaper.
 
