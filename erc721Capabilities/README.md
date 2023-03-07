@@ -30,16 +30,15 @@ The ERC-721 Metadata extension includes the following functions:
  
 - [**ownership node**] `function name() external view returns (string _name)`: returns the name of the NFT collection.
 - [**ownership node**] `function symbol() external view returns (string _symbol)`: returns the symbol of the NFT collection.
-- `function tokenURI(uint256 _tokenId) external view returns (string)`: returns the URI of a given asset.
-    * [**ownership node**] returns an universal location to the evolution chain
-    * [**evolution node**] returns an URL to the same node
-    * [**ERC721 node**] returns an URL to the same node
+- [**ERC721 node**]`function tokenURI(uint256 _tokenId) external view returns (string)`: returns the URI of a given asset.
+    * **ownership node** returns an universal location to the evolution chain
+    * **evolution node** returns the metadata
 
 
 ## Metadata extension
 
 The ERC-721 Enumeration extension includes the following functions:
 
-- [**ERC721 node**] `function totalSupply() external view returns (uint256)`: returns the total count of valid NFTs tracked by the contract.
-- [**ERC721 node**] `function tokenByIndex(uint256 _index) external view returns (uint256)`: returns the identifier for the NFT at the given index of all NFTs assigned to the contract.
+- [**evolution node**] `function totalSupply() external view returns (uint256)`: returns the total count of valid NFTs tracked by the contract.
+- [**evolution node**] `function tokenByIndex(uint256 _index) external view returns (uint256)`: returns the identifier for the NFT at the given index of all NFTs assigned to the contract.
 - [**ERC721 node**] `function tokenOfOwnerByIndex(address _owner, uint256 _index) external view returns (uint256)`: returns the identifier for the NFT at the given index of all NFTs assigned to the owner.
