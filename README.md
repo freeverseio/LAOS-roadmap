@@ -62,6 +62,9 @@ the governance of the evolution chain and instead allow it to be governed by the
 ## Milestone 2 [months 3-6]
 During Milestone 2 we will concentrate on implementing the core features of Living Assets. Our primary goals will include enabling LAOS to create collections, transfer Living Assets, evolve the assets' metadata, generate proofs, and verify assets metadata via provision of Merkle proofs. THe compatibility layer with the ERC721 standard will also be integrated.
 
+At the end of this milestone, we shall have released:
+- LAOS ERC721 node
+
 The following are the 3 main deliverables of Milestone 2.
 
 ### Deliverable 1:
@@ -91,6 +94,9 @@ This deliverable will focus on the generation of proofs of existence for the met
 ## Milestone 3 [months 6-9]
 
 During the final stage of development, we will prioritize cross-chain communication with sibling parachains, conduct a thorough code audit, and make preparations for the stable release of the code. We will also create a dynamic asset marketplace to demonstrate the system's capabilities. Finally, we will enable staking and transition from sudo to a more decentralized governance system. 
+
+At the end of this milestone, we shall have released:
+- LivingAssets market
 
 The following are the 3 main deliverables of Milestone 3.
 
