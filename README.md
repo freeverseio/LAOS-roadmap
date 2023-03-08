@@ -48,14 +48,14 @@ channel from the evolution chain to the ownership chain.
 
 ### Deliverable 3: 
 The third deliverable will focus on enabling bidirectional communication of the LAOS chain through trustless 
-bridges, allowing governance of the evolution chain from the ownership chain. To achieve this, we will remove 
-the governance of the evolution chain and instead allow it to be governed by the ownership chain. 
+bridges, this will eventually allow aspects of the evoChains to be triggered by the ownChain, such as runtime updates,
+or transfer of native LAOS tokens. 
 
 ![](./relay_ownership_evolution_duplexbridge.drawio.svg)
 
 - [evoChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
 - [evoChain] governance removed
-- [ownChain] govern the evolution chains by XCM
+- [ownChain] capable of sending commands via XCM
 - [bridge] ownership -> evolution bridge up and running
 
 ---
@@ -113,6 +113,8 @@ In order to open the economy of the LAOS token we will implement XC-20 protocol 
 
 ### Deliverable 3:
 In the final deliverable we will release the first stable version of the software and remove the sudo pallet from the ownership chain.
+Depending on maturity of different components in the ecosystem, this milestone may also include the governance / runtime changes of the evoChains to be triggered 
+from the ownership chain.
 
 - [ownChain] remove sudo pallet
 - stable release of LAOS ownership node
