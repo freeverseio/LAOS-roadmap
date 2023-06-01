@@ -30,7 +30,7 @@ Rococo as a parachain, and the first evoChain will be up and running as a soloch
 ![](./relay_ownership_evolution.drawio.svg)
 - [ownChain] release of LAOS ownership parachain node based on [substrate parachain template](https://github.com/substrate-developer-hub/substrate-parachain-template)
 - [ownChain] LAOS ownership chain is alive
-- [ownChain] LAOS ownership chain connected to [Rococo](https://substrate.io/developers/rococo-network) as a parachain
+- [ownChain] LAOS ownership chain connected as a parachain to a test relay chain
 - [evoChain] release of LAOS evolution chain node based on the [substrate node template](https://github.com/substrate-developer-hub/substrate-node-template)
 - [evoChain] LAOS evolution chain is alive 
 
