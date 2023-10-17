@@ -37,8 +37,8 @@ Rococo as a parachain, and the first evoChain will be up and running as a soloch
 ### Deliverable 2: 
 The second deliverable is focused entirely on creating a trustless bridge between the LAOS evolution chains
 and the ownership chain. To achieve this, we will install an evolution chain light client in the ownership 
-chain and initiate a bridge service between the two chains. Additionally, we will open the Grandpa-XCM 
-channel from the evolution chain to the ownership chain.
+chain and initiate a bridge service between the two chains. In future deliverables, the bridge will be used to
+open the Grandpa-XCM channel from the evolution chain to the ownership chain.
 
 ![](./relay_ownership_evolution_bridge.drawio.svg)
 
@@ -85,12 +85,14 @@ This deliverable will focus on the development of the necessary services to prov
 - release ERC721 node 
 
 ### Deliverable 3:
-This deliverable will focus on the generation of proofs of existence for the metadata of the assets evolved in evoChains. Anyone with access to evoChain data will be able to generate such proofs and verify them on-chain in the ownership chain.
+In order to open the economy of the LAOS token we will implement XC-20 protocol for reserve transfer. The protocol will not only allow the transfer of LAOS tokens
+from the ownership chain to other parachains, but also between the ownership chain and the evoChains; eventually, the evoChains will not own any native token,
+and will resort to LAOS tokens transferred by the bridge to function. 
 
-- [evoChain] generate proof of existence of assets metadata
-- [ownChain] verify proof of existence of assets metadata
+- [ownChain] XC-20 protocol, with transfers from ownership chain to evoChains and to other sibling parachains
 
 ---
+
 ## Milestone 3 [months 6-9]
 
 During the final stage of development, we will prioritize cross-chain communication with sibling parachains, conduct a thorough code audit, and make preparations for the stable release of the code. We will also create a dynamic asset marketplace to demonstrate the system's capabilities. Finally, we will enable staking and transition from sudo to a more decentralized governance system. 
@@ -101,9 +103,8 @@ At the end of this milestone, we shall have released:
 The following are the 3 main deliverables of Milestone 3.
 
 ### Deliverable 1:
-In order to open the economy of the LAOS token we will implement XC-20 protocol for reserve transfer. We also activate the XCMv3 primitives to control Living Assets from sibling parachains. Additionally we will create the second LAOS evolution chain and integrate means to move collections among evoChains.
+We will extend the XC-20 transfers with XCMv3 primitives to control Living Assets from sibling parachains.
 
-- [ownChain] XC-20 protocol
 - [ownChain] remote transfer of Living Assets
 
 ### Deliverable 2:
@@ -121,6 +122,12 @@ from the ownership chain.
 - stable release of LAOS evolution node
 - stable release of ERC721 node
 - stable release of the bridge
+
+### Deliverable 4:
+This deliverable will focus on the generation of proofs of existence for the metadata of the assets evolved in evoChains. Anyone with access to evoChain data will be able to generate such proofs and verify them on-chain in the ownership chain.
+
+- [evoChain] generate proof of existence of assets metadata
+- [ownChain] verify proof of existence of assets metadata
 
 ---
 
