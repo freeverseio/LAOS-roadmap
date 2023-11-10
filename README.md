@@ -73,25 +73,32 @@ or transfer of native LAOS tokens.
 
 ---
 ## Milestone 2 [months 3-6]
-During Milestone 2 we will concentrate on implementing the core features of Living Assets. Our primary goals will include enabling LAOS to create collections, transfer Living Assets, evolve the assets' metadata, generate proofs, and verify assets metadata via provision of Merkle proofs. THe compatibility layer with the ERC721 standard will also be integrated.
+
+Milestone 2 will produce the first runtime ready to deploy on Kusama. After the full understanding about how to set up the bridge from Milestone 1, the functionality from the Evochain will be ported to the Parachain, to be able to go to mainnet with the first step of the architecture described above. 
+
+During Milestone 2 we will also concentrate on implementing one core feature of LAOS Assets: enabling bridgeless minting and evolution in all EVM chains (including Ethereum and Polygon).
+
+On the one hand we will work on the pallet to enable creating collections, minting and evolving the assets' metadata. We will also work on extending the ERC721 standard to enable bridgeless minting, and provide Solidity reference implementations. Finally, we will produce the first version of the LAOS Universal Node, capable of permissionlessly syncing with assets whose ownership and attributes are managed by two different consensus systems.
 
 At the end of this milestone, we shall have released:
-- LAOS ERC721 node
+- LAOS Runtime ready for mainnet,
+- LAOS Universal node,
+- ERC721 Universal extension for bridgeless minting.
 
 The following are the 3 main deliverables of Milestone 2.
 
 ### Deliverable 1:
 This deliverable will focus on the business logic for creating collections and managing their evolution, in manners that can be verifiable from the ownership chain.
 
-To achieve this, we will develop a **Living Assets ownership pallet** based on the [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) and integrate it into the ownership chain. Additionally, we will develop a **Living Assets evolution pallet** and integrate it into the evolution chain. This will allow the creation and evolution of collections.
+To achieve this, we will develop a **LAOS ownership pallet** based on the [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) and integrate it into the ownership chain. Additionally, we will develop a **LAOS evolution pallet** and integrate it into the evolution chain. This will allow the creation and evolution of collections.
 
-- development of Living Assets ownership pallet based on [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) 
-- [ownChain] integration Living Assets ownership pallet  
-- development of Living Assets evolution pallet
-- [evoChain] integration of Living Assets evolution pallet
+- development of LAOS ownership pallet based on [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) 
+- [ownChain] integration LAOS ownership pallet  
+- development of LAOS evolution pallet
+- [evoChain] integration of LAOS evolution pallet
 
 ### Deliverable 2:
-This deliverable will focus on the development of the necessary services to provide compatibility with the ERC721 standard. This will involve introducing the [LAOS ERC721 node](./erc721Capabilities/README.md), which will provide an Ethereum JSON-RPC API. As a result, Ethereum wallets such as Metamask, as well as ayn DApp already familiarized with EVM-compatible blockchains, will be able to interact with Living Assets.
+This deliverable will focus on the development of the necessary services to provide compatibility with the ERC721 standard. This will involve introducing the [LAOS ERC721 node](./erc721Capabilities/README.md), which will provide an Ethereum JSON-RPC API. As a result, Ethereum wallets such as Metamask, as well as ayn DApp already familiarized with EVM-compatible blockchains, will be able to interact with LAOS Assets.
 
 ![](./erc721Capabilities/nodes-infrastructure.drawio.svg)
 
@@ -116,12 +123,12 @@ At the end of this milestone, we shall have released:
 The following are the 3 main deliverables of Milestone 3.
 
 ### Deliverable 1:
-We will extend the XC-20 transfers with XCMv3 primitives to control Living Assets from sibling parachains.
+We will extend the XC-20 transfers with XCMv3 primitives to control LAOS Assets from sibling parachains.
 
-- [ownChain] remote transfer of Living Assets
+- [ownChain] remote transfer of LAOS Assets
 
 ### Deliverable 2:
-- [frontend] creation of Living Assets marketplace based on [substrate frontend template](https://github.com/substrate-developer-hub/substrate-front-end-template)
+- [frontend] creation of LAOS Assets marketplace based on [substrate frontend template](https://github.com/substrate-developer-hub/substrate-front-end-template)
 - [ownChain] staking enabled
 - code audit
 
