@@ -1,8 +1,21 @@
 # **LAOS Roadmap**
 
-The LAOS Parachain aims to provide a secure, decentralized and highly scalable platform for the creation, ownership, and evolution of unique digital assets. From a high-level technical perspective, the platform will consist of a main Parachain that manages the ownership of the assets (the **ownChain**), connected via trustless bridges to multiple chains that manage the minting and evolution of the assets' attributes (the **evoChains**).
+The LAOS Parachain aims to provide a bridgelessly-connected, secure, decentralized and highly scalable platform for the creation, ownership, and evolution of unique digital assets across all blockchains. In its final form, from a high-level technical perspective, the platform will consist of a main Parachain $(b)$ that manages the ownership of the assets (the **ownChain**), the native coin, and governance, etc., connected via a trustless bridge $(c)$ to a LAOS Relay Chain $(d)$ to which **evoChains** are connected via Parachain patterns. Evochains ($e_i$) manage the minting and evolution of the assets' attributes.
 
-The platform will utilize the Substrate framework and enable users to easily mint, trade, and evolve their assets. In addition, the LAOS Parachain will implement a robust governance system that will enable token holders to propose and vote on changes to the protocol.
+![LAOS-Arch-full](laos-architecture.png)
+
+On a first step towards the full architecture, all functionality of both the OwnChain and the EvoChains will lie in the Parachain. In this MVP, bridgeless minting and evolution will be possible in all EVM chains, as described in the [LAOS Whitepaper](https://github.com/freeverseio/laos-whitepaper/blob/main/laos.pdf). This is depicted in the following figure.
+
+![LAOS-Arch-step1](laos-architecture-step1.png)
+
+In subsequent steps, the LAOS Relay Chain will be spawn, connected via the trustless bridge, with its native currency based on transferred LAOS tokens, and its governance controlled by the Parachain.
+
+![LAOS-Arch-step2](laos-architecture-step2.png)
+
+In the final step, Evochains will be spawn from the LAOS Relay Chain, increasing their number as usage requires.
+
+The platform will utilize the Substrate framework and expose EVM compatibility, leveraging work by other Parachains, such as Moonbeam.
+In addition, the LAOS Parachain will implement a governance system that will enable token holders to propose and vote on changes to the protocol.
 
 ---
 ## Milestone 1 [months 0-3]
