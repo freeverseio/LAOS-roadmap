@@ -83,9 +83,9 @@ This will require work on three fronts.
 On the one hand we will work on the pallet to enable creating collections, minting and evolving the assets' metadata. We will also work on extending the ERC721 standard to enable bridgeless minting, and provide Solidity reference implementations. Finally, we will produce the first version of the LAOS Universal Node, capable of permissionlessly syncing with assets whose ownership and attributes are managed by two different consensus systems.
 
 At the end of this milestone, we shall have released:
-- The MVP for the LAOS Runtime ready for mainnet,
-- The MVP for the LAOS Universal node,
-- THe ERC721 Universal extension for bridgeless minting, including spec and Solidity code.
+- stable release of the LAOS Runtime ready for mainnet,
+- stable release of the LAOS Universal node,
+- stable release of the ERC721 Universal extension for bridgeless minting, including spec and Solidity code.
 
 The following are the 3 main deliverables of Milestone 2.
 
@@ -94,8 +94,7 @@ This deliverable will focus on the business logic for creating collections and m
 
 We will develop a **LAOS evolution pallet** and integrate it, first in the EvoChain, and then fuse it into the OwnChain. This will allow the creation and evolution of collections.
 
-- development of the LAOS evolution pallet
-- [EvoChain] & [OwnChain]: integration of LAOS evolution pallet
+- [EvoChain] & [OwnChain] development and stable release of the LAOS evolution pallet
 
 ### Deliverable 2:
 This deliverable will focus on the development of the necessary services to provide compatibility with the ERC721 standard. This will involve introducing the [LAOS ERC721 Universal node](./erc721Capabilities/README.md), which will provide an Ethereum JSON-RPC API. As a result, Ethereum wallets such as Metamask, as well as ayn DApp already familiarized with EVM-compatible blockchains, will be able to interact with LAOS Assets.
@@ -104,8 +103,8 @@ Likewise, parallel work will be done to define the specs for the smart contracts
 
 ![](./erc721Capabilities/nodes-infrastructure.drawio.svg)
 
-- release ERC721 Universal Node 
-- release ERC721 Universal extension for bridgeless minting, including spec and Solidity code.
+- stable release of ERC721 Universal Node 
+- stable release of ERC721 Universal extension for bridgeless minting, including spec and Solidity code.
 
 
 ### Deliverable 3:
@@ -117,10 +116,22 @@ In order to open the economy of the LAOS token we will implement XC-20 protocol 
 
 ## Milestone 3 [months 6-9]
 
-During the final stage of development, we will prioritize cross-chain communication with sibling parachains, conduct a thorough code audit, and make preparations for the stable release of the code. We will also create a dynamic asset marketplace to demonstrate the system's capabilities. Finally, we will enable staking and transition from sudo to a more decentralized governance system. 
+Milestone 3 will start with the deploy on Kusama, after acquiring a slot.
+We will incrementally add features to the deployed MVP.
+
+On the one hand, we will prioritize cross-chain transfers of the LAOS ERC721
+tokens, especially to smart contract chains like Moonbeam and Astar. 
+We will also finalize the Ownership chain pallet for managing ownership
+in the LAOS Parachain (as opposed to external EVM chains), by completing 
+the core business logic from Milestone 1, and complementing it with the [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts),
+producing a fully ERC721-compatible **LAOS ownership pallet**.
+
+Finally, we will also create a LAOS assets marketplace to demonstrate the system's capabilities, including bridgeless minting and evolution. We will also transition from sudo to a more decentralized governance system. 
 
 At the end of this milestone, we shall have released:
-- LivingAssets market
+- XC-721 transfers,
+- stable release of the LAOS Ownership pallet,
+- LivingAssets market.
 
 The following are the 3 main deliverables of Milestone 3.
 
@@ -131,27 +142,14 @@ We will extend the XC-20 transfers with XCMv3 primitives to control LAOS Assets 
 
 ### Deliverable 2:
 - [frontend] creation of LAOS Assets marketplace based on [substrate frontend template](https://github.com/substrate-developer-hub/substrate-front-end-template)
-- [OwnChain] staking enabled
-- code audit
+
 
 ### Deliverable 3:
-In the final deliverable we will release the first stable version of the software and remove the sudo pallet from the ownership chain.
-Depending on maturity of different components in the ecosystem, this milestone may also include the governance / runtime changes of the evoChains to be triggered 
-from the ownership chain.
 
-- [OwnChain] remove sudo pallet
-- stable release of LAOS ownership node
-- stable release of LAOS evolution node
-- stable release of ERC721 node
-- stable release of the bridge
+We will extend the core business logic from Milestone 1, and complement it with the [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts),
+to produce a fully ERC721-compatible **LAOS ownership pallet**.
 
-### Deliverable 4:
-This deliverable will focus on the generation of proofs of existence for the metadata of the assets evolved in evoChains. Anyone with access to EvoChain data will be able to generate such proofs and verify them on-chain in the ownership chain.
-
-- [EvoChain] generate proof of existence of assets metadata
-- [OwnChain] verify proof of existence of assets metadata
-
----
+- [OwnChain] stable release of the LAOS Ownership pallet,
 
 ## Notes
 
