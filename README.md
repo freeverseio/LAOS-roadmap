@@ -90,28 +90,28 @@ At the end of this milestone, we shall have released:
 The following are the 3 main deliverables of Milestone 2.
 
 ### Deliverable 1:
-This deliverable will focus on the business logic for creating collections and managing their evolution, in manners that can be verifiable from the ownership chain.
+This deliverable will focus on the business logic for creating collections and managing their evolution, in manners that can be used by any EVM-compatible ownership chain to benefit from bridgeless minting and evolution.
 
-To achieve this, we will develop a **LAOS ownership pallet** based on the [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) and integrate it into the ownership chain. Additionally, we will develop a **LAOS evolution pallet** and integrate it into the evolution chain. This will allow the creation and evolution of collections.
+We will develop a **LAOS evolution pallet** and integrate it, first in the EvoChain, and then fuse it into the OwnChain. This will allow the creation and evolution of collections.
 
-- development of LAOS ownership pallet based on [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) 
-- [OwnChain] integration LAOS ownership pallet  
-- development of LAOS evolution pallet
-- [EvoChain] integration of LAOS evolution pallet
+- development of the LAOS evolution pallet
+- [EvoChain] & [OwnChain]: integration of LAOS evolution pallet
 
 ### Deliverable 2:
-This deliverable will focus on the development of the necessary services to provide compatibility with the ERC721 standard. This will involve introducing the [LAOS ERC721 node](./erc721Capabilities/README.md), which will provide an Ethereum JSON-RPC API. As a result, Ethereum wallets such as Metamask, as well as ayn DApp already familiarized with EVM-compatible blockchains, will be able to interact with LAOS Assets.
+This deliverable will focus on the development of the necessary services to provide compatibility with the ERC721 standard. This will involve introducing the [LAOS ERC721 Universal node](./erc721Capabilities/README.md), which will provide an Ethereum JSON-RPC API. As a result, Ethereum wallets such as Metamask, as well as ayn DApp already familiarized with EVM-compatible blockchains, will be able to interact with LAOS Assets.
+
+Likewise, parallel work will be done to define the specs for the smart contracts that will extend the standard ERC721 interface, namely, to a ERC721 Universal standard, capable of using bridgeless minting and evolution on any EVM-compatible blockchain.
 
 ![](./erc721Capabilities/nodes-infrastructure.drawio.svg)
 
-- release ERC721 node 
+- release ERC721 Universal Node 
+- release ERC721 Universal extension for bridgeless minting, including spec and Solidity code.
+
 
 ### Deliverable 3:
-In order to open the economy of the LAOS token we will implement XC-20 protocol for reserve transfer. The protocol will not only allow the transfer of LAOS tokens
-from the ownership chain to other parachains, but also between the ownership chain and the evoChains; eventually, the evoChains will not own any native token,
-and will resort to LAOS tokens transferred by the bridge to function. 
+In order to open the economy of the LAOS token we will implement XC-20 protocol for reserve transfer. Eventually, the protocol will not only allow the transfer of LAOS tokens from the ownership chain to other parachains, but also between the ownership chain and the evoChains; however, in Milestone 2, we will focus only on integrating transfers from the LAOS OwnChain to sibling Parachains.
 
-- [OwnChain] XC-20 protocol, with transfers from ownership chain to evoChains and to other sibling parachains
+- [OwnChain] XC-20 protocol, with transfers from the LAOS OwnChain to sibling Parachains.
 
 ---
 
