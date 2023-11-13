@@ -1,6 +1,6 @@
 # **LAOS Roadmap**
 
-The LAOS Parachain aims to provide a bridgelessly-connected, secure, decentralized and highly scalable platform for the creation, ownership, and evolution of unique digital assets across all blockchains. In its final form, from a high-level technical perspective, the platform will consist of a main Parachain $(b)$ that manages the ownership of the assets (the **ownChain**), the native coin, and governance, etc., connected via a trustless bridge $(c)$ to a LAOS Relay Chain $(d)$ to which **evoChains** are connected via Parachain patterns. Evochains ($e_i$) manage the minting and evolution of the assets' attributes.
+The LAOS Parachain aims to provide a bridgelessly-connected, secure, decentralized and highly scalable platform for the creation, ownership, and evolution of unique digital assets across all blockchains. In its final form, from a high-level technical perspective, the platform will consist of a main Parachain $(b)$ that manages the ownership of the assets (the **OwnChain**), the native coin, and governance, etc., connected via a trustless bridge $(c)$ to a LAOS Relay Chain $(d)$ to which **evoChains** are connected via Parachain patterns. Evochains ($e_i$) manage the minting and evolution of the assets' attributes.
 
 ![LAOS-Arch-full](laos-architecture.png)
 
@@ -22,7 +22,7 @@ In addition, the LAOS Parachain will implement a governance system that will ena
 
 The first milestone of the project aims to establish the basic infrastructure required for the development of 
 the LAOS blockchain network within the subsequent three months. The primary goals are to create the LAOS ownership 
-chain (**ownChain**) as a parachain of Rococo, and create the first LAOS evolution chain (**evoChain**).A bi-directional trustless bridge will 
+chain (**OwnChain**) as a parachain of Rococo, and create the first LAOS evolution chain (**EvoChain**).A bi-directional trustless bridge will 
 be installed to enable cross chain communication, allowing the ownership chain to govern the evolution chain.
 
 At the end of this milestone, we shall have released:
@@ -38,14 +38,14 @@ infrastructure focused on local testing, continuous integration, and continuous 
 establish the fundamental infrastructure upon which we will build the project's subsequent deliverables. 
 To achieve this goal, we will release the LAOS ownership parachain node and the LAOS evolution chain node. 
 After completion of this deliverable, the LAOS ownership chain will be operational and connected to 
-Rococo as a parachain, and the first evoChain will be up and running as a solochain.
+Rococo as a parachain, and the first EvoChain will be up and running as a solochain.
 
 ![](./relay_ownership_evolution.drawio.svg)
-- [ownChain] release of LAOS ownership parachain node based on [substrate parachain template](https://github.com/substrate-developer-hub/substrate-parachain-template)
-- [ownChain] LAOS ownership chain is alive
-- [ownChain] LAOS ownership chain connected as a parachain to a test relay chain
-- [evoChain] release of LAOS evolution chain node based on the [substrate node template](https://github.com/substrate-developer-hub/substrate-node-template)
-- [evoChain] LAOS evolution chain is alive 
+- [OwnChain] release of LAOS ownership parachain node based on [substrate parachain template](https://github.com/substrate-developer-hub/substrate-parachain-template)
+- [OwnChain] LAOS ownership chain is alive
+- [OwnChain] LAOS ownership chain connected as a parachain to a test relay chain
+- [EvoChain] release of LAOS evolution chain node based on the [substrate node template](https://github.com/substrate-developer-hub/substrate-node-template)
+- [EvoChain] LAOS evolution chain is alive 
 
 ### Deliverable 2: 
 The second deliverable is focused entirely on creating a trustless bridge between the LAOS evolution chains
@@ -55,35 +55,37 @@ open the Grandpa-XCM channel from the evolution chain to the ownership chain.
 
 ![](./relay_ownership_evolution_bridge.drawio.svg)
 
-- [ownChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
+- [OwnChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
 - [bridge] release of LAOS bridge
 - [bridge] evolution -> ownership bridge up and running
 
 ### Deliverable 3: 
 The third deliverable will focus on enabling bidirectional communication of the LAOS chain through trustless 
-bridges, this will eventually allow aspects of the evoChains to be triggered by the ownChain, such as runtime updates,
+bridges, this will eventually allow aspects of the evoChains to be triggered by the OwnChain, such as runtime updates,
 or transfer of native LAOS tokens. 
 
 ![](./relay_ownership_evolution_duplexbridge.drawio.svg)
 
-- [evoChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
-- [evoChain] governance removed
-- [ownChain] capable of sending commands via XCM
+- [EvoChain] integrate the [solochain-parachain bridge](https://github.com/paritytech/solo-para-bridge-poc)
+- [EvoChain] governance removed
+- [OwnChain] capable of sending commands via XCM
 - [bridge] ownership -> evolution bridge up and running
 
 ---
 ## Milestone 2 [months 3-6]
 
-Milestone 2 will produce the first runtime ready to deploy on Kusama. After the full understanding about how to set up the bridge from Milestone 1, the functionality from the Evochain will be ported to the Parachain, to be able to go to mainnet with the first step of the architecture described above. 
+Milestone 2 will produce the first runtime ready to deploy on Kusama mainnet. After having acquired a full understanding about how to set up the bridge and the corresponding light-clients from Milestone 1, the EvoChain will be fused into the OwnChain temporarily, 
+in order to be ready to go to mainnet with the first step of the architecture described above. 
 
 During Milestone 2 we will also concentrate on implementing one core feature of LAOS Assets: enabling bridgeless minting and evolution in all EVM chains (including Ethereum and Polygon).
+This will require work on three fronts.
 
 On the one hand we will work on the pallet to enable creating collections, minting and evolving the assets' metadata. We will also work on extending the ERC721 standard to enable bridgeless minting, and provide Solidity reference implementations. Finally, we will produce the first version of the LAOS Universal Node, capable of permissionlessly syncing with assets whose ownership and attributes are managed by two different consensus systems.
 
 At the end of this milestone, we shall have released:
-- LAOS Runtime ready for mainnet,
-- LAOS Universal node,
-- ERC721 Universal extension for bridgeless minting.
+- The MVP for the LAOS Runtime ready for mainnet,
+- The MVP for the LAOS Universal node,
+- THe ERC721 Universal extension for bridgeless minting, including spec and Solidity code.
 
 The following are the 3 main deliverables of Milestone 2.
 
@@ -93,9 +95,9 @@ This deliverable will focus on the business logic for creating collections and m
 To achieve this, we will develop a **LAOS ownership pallet** based on the [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) and integrate it into the ownership chain. Additionally, we will develop a **LAOS evolution pallet** and integrate it into the evolution chain. This will allow the creation and evolution of collections.
 
 - development of LAOS ownership pallet based on [nfts pallet](https://github.com/paritytech/substrate/tree/master/frame/nfts) 
-- [ownChain] integration LAOS ownership pallet  
+- [OwnChain] integration LAOS ownership pallet  
 - development of LAOS evolution pallet
-- [evoChain] integration of LAOS evolution pallet
+- [EvoChain] integration of LAOS evolution pallet
 
 ### Deliverable 2:
 This deliverable will focus on the development of the necessary services to provide compatibility with the ERC721 standard. This will involve introducing the [LAOS ERC721 node](./erc721Capabilities/README.md), which will provide an Ethereum JSON-RPC API. As a result, Ethereum wallets such as Metamask, as well as ayn DApp already familiarized with EVM-compatible blockchains, will be able to interact with LAOS Assets.
@@ -109,7 +111,7 @@ In order to open the economy of the LAOS token we will implement XC-20 protocol 
 from the ownership chain to other parachains, but also between the ownership chain and the evoChains; eventually, the evoChains will not own any native token,
 and will resort to LAOS tokens transferred by the bridge to function. 
 
-- [ownChain] XC-20 protocol, with transfers from ownership chain to evoChains and to other sibling parachains
+- [OwnChain] XC-20 protocol, with transfers from ownership chain to evoChains and to other sibling parachains
 
 ---
 
@@ -125,11 +127,11 @@ The following are the 3 main deliverables of Milestone 3.
 ### Deliverable 1:
 We will extend the XC-20 transfers with XCMv3 primitives to control LAOS Assets from sibling parachains.
 
-- [ownChain] remote transfer of LAOS Assets
+- [OwnChain] remote transfer of LAOS Assets
 
 ### Deliverable 2:
 - [frontend] creation of LAOS Assets marketplace based on [substrate frontend template](https://github.com/substrate-developer-hub/substrate-front-end-template)
-- [ownChain] staking enabled
+- [OwnChain] staking enabled
 - code audit
 
 ### Deliverable 3:
@@ -137,17 +139,17 @@ In the final deliverable we will release the first stable version of the softwar
 Depending on maturity of different components in the ecosystem, this milestone may also include the governance / runtime changes of the evoChains to be triggered 
 from the ownership chain.
 
-- [ownChain] remove sudo pallet
+- [OwnChain] remove sudo pallet
 - stable release of LAOS ownership node
 - stable release of LAOS evolution node
 - stable release of ERC721 node
 - stable release of the bridge
 
 ### Deliverable 4:
-This deliverable will focus on the generation of proofs of existence for the metadata of the assets evolved in evoChains. Anyone with access to evoChain data will be able to generate such proofs and verify them on-chain in the ownership chain.
+This deliverable will focus on the generation of proofs of existence for the metadata of the assets evolved in evoChains. Anyone with access to EvoChain data will be able to generate such proofs and verify them on-chain in the ownership chain.
 
-- [evoChain] generate proof of existence of assets metadata
-- [ownChain] verify proof of existence of assets metadata
+- [EvoChain] generate proof of existence of assets metadata
+- [OwnChain] verify proof of existence of assets metadata
 
 ---
 
