@@ -74,7 +74,9 @@ or transfer of native LAOS tokens.
 ---
 ## Milestone 2 [months 3-6]
 
-Milestone 2 will produce the first runtime, ready to be deployed on the Kusama mainnet. After acquiring a full understanding of how to set up the bridge and the corresponding light-clients from Milestone 1, the EvoChain will temporarily be fused into the OwnChain, 
+Milestone 2 will yield the first runtime, prepared for deployment on the Kusama mainnet. Additionally, it will focus on winning an auction in Kusama and launching K-LAOS (Kusama-LAOS).
+
+After acquiring a full understanding of how to set up the bridge and the corresponding light-clients from Milestone 1, the EvoChain will temporarily be fused into the OwnChain, 
 in order to be ready to go to mainnet with the first step of the architecture described above. 
 
 During Milestone 2 we will also concentrate on implementing one core feature of LAOS Assets: enabling bridgeless minting and evolution in all EVM chains (including Ethereum and Polygon).
@@ -85,7 +87,7 @@ On the one hand, we will work on the pallet to enable creating collections, mint
 At the end of this milestone, we shall have released:
 - stable release of the LAOS Runtime ready for mainnet,
 - stable release of the LAOS Universal node,
-- stable release of the ERC721 Universal extension for bridgeless minting, including spec and Solidity code.
+- stable release of the Universal extension for bridgeless minting, including spec and Solidity code.
 
 The following are the 3 main deliverables of Milestone 2.
 
@@ -97,20 +99,22 @@ We will develop a **LAOS evolution pallet** and integrate it, first in the EvoCh
 - [EvoChain] & [OwnChain] development and stable release of the LAOS evolution pallet
 
 ### Deliverable 2:
-This deliverable will focus on developing the necessary services to ensure compatibility with the ERC721 standard. This will involve introducing the [LAOS ERC721 Universal node](./erc721Capabilities/README.md), which will provide an Ethereum JSON-RPC API. As a result, Ethereum wallets such as Metamask, as well as any DApp already familiar with EVM-compatible blockchains, will be able to interact with LAOS Assets.
+This deliverable will focus on developing the necessary services to ensure compatibility with the ERC721 standard. This will involve introducing the [LAOS Universal node](https://github.com/freeverseio/laos-universal-node), which will provide an Ethereum JSON-RPC API. As a result, Ethereum wallets such as Metamask, as well as any DApp already familiar with EVM-compatible blockchains, will be able to interact with LAOS Assets. [This issue](https://github.com/freeverseio/laos-erc721/issues/11) is aimed at completing the specification for the Universal Node.
 
 Likewise, parallel work will be done to define the specs for the smart contracts that will extend the standard ERC721 interface, namely, to a ERC721 Universal standard, capable of using bridgeless minting and evolution on any EVM-compatible blockchain.
 
-![](./erc721Capabilities/nodes-infrastructure.drawio.svg)
+![](./unode.png)
 
-- stable release of ERC721 Universal Node 
-- stable release of ERC721 Universal extension for bridgeless minting, including spec and Solidity code.
+- stable release of Universal Node 
+- stable release of Universal extension for bridgeless minting, including spec and Solidity code.
 
 
 ### Deliverable 3:
-In order to open the economy of the LAOS token we will implement XC-20 protocol for reserve transfer. Eventually, the protocol will not only allow the transfer of LAOS tokens from the ownership chain to other parachains, but also between the ownership chain and the EvoChains; however, in Milestone 2, we will focus only on integrating transfers from the LAOS OwnChain to sibling Parachains.
+In an effort to closely mirror the environment of Polkadot's final Parachain, we plan to bid for an auction in Kusama and deploy K-LAOS (Kusama LAOS). This approach will challenge the project to tackle that crucial last 10% of the work, which often accounts for 90% of the effort. It will also encourage a development cycle focused on producing minimal, yet incrementally valuable, fully tested updates. These updates will first be vetted on the FV-Rococo chain before being deemed ready for the mainnet.
 
-- [OwnChain] XC-20 protocol, with transfers from the LAOS OwnChain to sibling Parachains.
+- [K-LAOS] K-LAOS produces blocks as a Parachain in Kusama
+- [infrastructure] Collators in at least three different cloud providers
+- [infrastructure] Fully functioning EVM explorer 
 
 ---
 
@@ -119,7 +123,7 @@ In order to open the economy of the LAOS token we will implement XC-20 protocol 
 Milestone 3 will start with the deployment on Kusama, after acquiring a slot.
 We will incrementally add features to the deployed MVP.
 
-On the one hand, we will prioritize cross-chain transfers of the LAOS ERC721
+On the one hand, we will prioritize cross-chain transfers of both LAOS coins (via XC-20) and LAOS ERC721
 tokens, especially to smart contract chains like Moonbeam and Astar. 
 We will also finalize the Ownership chain pallet for managing ownership
 in the LAOS Parachain (as opposed to external EVM chains), by completing 
@@ -129,15 +133,16 @@ producing a fully ERC721-compatible **LAOS ownership pallet**.
 Finally, we will also create a LAOS assets marketplace to demonstrate the system's capabilities, including bridgeless minting and evolution. We will also transition from sudo to a more decentralized governance system. 
 
 At the end of this milestone, we shall have released:
-- XC-721 transfers,
+- XC-20 and XC-721 transfers,
 - stable release of the LAOS Ownership pallet,
 - LivingAssets market.
 
 The following are the 3 main deliverables of Milestone 3.
 
 ### Deliverable 1:
-We will extend the XC-20 transfers with XCMv3 primitives to control LAOS Assets from sibling parachains.
+We will implement the XC-20 transfers and XCMv3 primitives to control LAOS Assets from sibling parachains.
 
+- [OwnChain] remote transfer of LAOS coins
 - [OwnChain] remote transfer of LAOS Assets
 
 ### Deliverable 2:
