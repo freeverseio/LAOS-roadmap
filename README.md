@@ -85,7 +85,7 @@ This will require work on three fronts.
 On the one hand, we will work on the pallet to enable creating collections, minting, and evolving the assets' metadata. We will also work on extending the ERC721 standard to enable bridgeless minting, and provide Solidity reference implementations. Finally, we will produce the first version of the LAOS Universal Node, capable of permissionlessly syncing with assets whose ownership and attributes are managed by two different consensus systems.
 
 At the end of this milestone, we shall have released:
-- stable release of the LAOS Runtime ready for mainnet,
+- stable release of the LAOS Runtime deployed on a Parachain in Kusama,
 - stable release of the LAOS Universal node,
 - stable release of the Universal extension for bridgeless minting, including spec and Solidity code.
 
@@ -105,8 +105,8 @@ Likewise, parallel work will be done to define the specs for the smart contracts
 
 ![](./unode.png)
 
-- stable release of Universal Node 
-- stable release of Universal extension for bridgeless minting, including spec and Solidity code.
+- [uNode] stable release of Universal Node 
+- [uNode] stable release of Universal extension for bridgeless minting, including spec and Solidity code.
 
 
 ### Deliverable 3:
