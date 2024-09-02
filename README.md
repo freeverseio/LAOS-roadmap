@@ -1,3 +1,7 @@
+# This repository has been archived
+
+ Please note that this repository has been archived and is no longer actively maintained. Please refer to the main [LAOS repository](https://github.com/freeverseio/laos) to keep up to date with the development of the LAOS Network. 
+
 # **LAOS Roadmap**
 
 The LAOS Parachain aims to provide a bridgelessly-connected, secure, decentralized, and highly scalable platform for creating, owning, and evolving unique digital assets across all blockchains. In its final form, from a high-level technical perspective, the platform will consist of a main Parachain $(b)$ that manages the asset ownership (the **OwnChain**), the native coin, and governance, etc., connected via a trustless bridge $(c)$ to a LAOS Relay Chain $(d)$ to which **EvoChains** are connected via Parachain patterns. Evochains ($e_i$) manage the minting and evolution of the assets' attributes.
